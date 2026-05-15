@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SoloWealth — Privacy Policy</title>
+    <meta name="description" content="Privacy Policy for the SoloWealth application. Privacy protection and local storage.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../styles.css">
+</head>
+<body>
+    <div class="background-glow"></div>
+    
+    <main class="container">
+        <header class="header">
+            <div class="logo-container">
+                <img src="../logo.png" alt="SoloWealth Logo" class="logo">
+            </div>
+            <h1>Privacy Policy</h1>
+            <p class="subtitle">SoloWealth — Guaranteed Privacy - Local Storage Only</p>
+            <div class="meta">
+                <span class="last-update">Last updated: May 15, 2026</span>
+            </div>
+        </header>
+
+        <section class="content-card">
+            <div class="intro">
+                <p>The protection of your privacy is the central pillar of <strong>SoloWealth</strong>. The application is designed according to a principle of absolute privacy by design (<strong>Privacy by Design</strong>).</p>
+                <p><strong>Privacy Commitment:</strong> No financial, personal or behavioral data is collected, transmitted or stored on external servers. All information entered remains exclusively stored in the local memory of your device.</p>
+            </div>
+
+            <div class="divider"></div>
+
+            <article class="sections">
+                <section id="collection">
+                    <h2>1. Absence of data collection</h2>
+                    <p>SoloWealth does not require any account creation, registration, or identification. Therefore:</p>
+                    <ul class="bullet-list">
+                        <li>We do not collect any nominative or contact data.</li>
+                        <li>We have no access to your financial data (salaries, budgets, assets).</li>
+                        <li>We do not use any third-party tracking or behavioral analysis tools.</li>
+                    </ul>
+                </section>
+
+                <section id="storage" class="highlight-section">
+                    <h2>2. Local storage and security</h2>
+                    <div class="privacy-badge">Local Storage</div>
+                    <p>All data related to your calculations and simulations are kept only on your device. They are protected by the standard security mechanisms of your operating system (Android/iOS).</p>
+                    <p>As the publisher has no access to any central database, it is technically impossible for us to consult, share or sell your information.</p>
+                </section>
+
+                <section id="third-party">
+                    <h2>3. Third-party services</h2>
+                    <p>SoloWealth interacts with external services only in the following cases:</p>
+                    <div class="grid-details">
+                        <div class="detail-item">
+                            <h3>Market Data</h3>
+                            <p>To update exchange rates, the application queries a specialized API. This request is anonymized and does not contain any personal financial information.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>Distribution Platforms</h3>
+                            <p>During installation or update, Google services may collect anonymous technical metadata (device model, error reports).</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="law25" class="alert-box">
+                    <h2>4. Compliance with Law 25 (Quebec)</h2>
+                    <div class="important-tag">COMPLIANCE</div>
+                    <p>In accordance with the Act respecting the protection of personal information in the private sector of Quebec, SoloWealth guarantees you total control:</p>
+                    <ul class="bullet-list">
+                        <li><strong>Right to deletion:</strong> Since the data is local, deleting the application results in the permanent and irreversible deletion of all your data.</li>
+                        <li><strong>Transparency:</strong> As no data is in the custody of the publisher, your personal information never leaves your private sphere.</li>
+                    </ul>
+                </section>
+
+                <section id="international">
+                    <h2>5. GDPR and International Compliance</h2>
+                    <div class="grid-details">
+                        <div class="detail-item">
+                            <h3>GDPR (France/EU)</h3>
+                            <p>SoloWealth adheres to the principles of the General Data Protection Regulation. Your rights to deletion and data portability are guaranteed by exclusive local storage: you remain the sole owner of your information.</p>
+                        </div>
+                        <div class="detail-item">
+                            <h3>United States (CCPA/COPPA)</h3>
+                            <p>We do not sell any personal information. SoloWealth does not knowingly collect any data from children under 13.</p>
+                        </div>
+                    </div>
+                </section>
+
+                <section id="disclaimer">
+                    <h2>6. Disclaimer</h2>
+                    <p>SoloWealth is a simulation and education tool. The calculations provided are estimates and do not constitute official financial advice. The user is solely responsible for decisions taken following the use of the application.</p>
+                </section>
+
+                <section id="contact">
+                    <h2>7. Contact</h2>
+                    <p>For any question regarding this policy, you can contact us at the following address:</p>
+                    <p><strong>contact.solowealth@gmail.com</strong></p>
+                    <p style="margin-top: 24px; font-size: 0.9em; opacity: 0.8;">SoloWealth - Designed and developed in Montreal, Quebec.</p>
+                </section>
+            </article>
+        </section>
+
+        <footer class="page-footer">
+            <p>&copy; 2026 SoloWealth. All rights reserved.</p>
+        </footer>
+    </main>
+
+    <script>
+        // Smooth scrolling and simple intersection observer for reveal effects
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('visible');
+                }
+            });
+        }, { threshold: 0.1 });
+
+        document.querySelectorAll('section').forEach(section => {
+            observer.observe(section);
+        });
+    </script>
+</body>
+</html>
